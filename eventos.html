@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopció de gats</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="icon" href="IMG/gatito.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+
+
+    h1 {
+      font-size: xx-large;
+      text-align: center;
+      font-style: italic;
+      font-family: fantasy;
+      background: linear-gradient(45deg, rgb(255, 251, 0), rgb(149, 4, 206));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent; 
+}
+
+
+
+    .item__title {
+      font-style: italic;
+      font-size: large;
+    }
+
+    .item__description {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transform: rotate(-5deg);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: rotate(0);
+    }
+
+    .gallery .img-circulo {
+      border-radius: 50%;
+    }
+
+    .gallery .img-cuadrado {
+      transform: rotate(10deg);
+    }
+
+    .info-section {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .navbar.is-primary{
+  background-color: #521781;
+    }
+
+  .navbar.is-primary .navbar-start > a.navbar-item:hover {
+    background-color: #3a0b55;
+    color: #fff;
+  }
+
+  .navbar.is-primary .navbar-brand > a.navbar-item:hover {
+  background-color: #3a0b55;
+  color: #fff;
+  }  
+
+  @media screen and (min-width: 1024px) {
+  .navbar-menu {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 50%;
+  }}
+
+
+  </style>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif;">
+
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <img style="width: 13%; border-radius: 50%; margin-right: 20px;" src="IMG/gatito.png" alt="">
+
+      <a class="navbar-item" href="#">
+        <strong>Cafetería Cat Cat-Fé</strong>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a style="background-color: #521781; color: white; margin-top: 14px;" href="index.html">Torna al Inici</a>
+
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<br>
+<h1>--------- Nous events a Cat Cat-Fé! ---------</h1>
+
+<section class="section">
+  <div class="container is-clipped">
+    <div id="slider">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9 is-covered">
+            <img src="IMG/evento1.jpg" alt="">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="item__title">
+            Amic Invisible.
+          </div>
+          <div class="item__description">
+            Per gaudir del canvi de temporada, farem un amic Invisible, tothom por participar! Si estàs interessat, <a href="contacte.html">contacta'ns.</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9 is-covered">
+            <img src="IMG/evento2.jpg" alt="">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="item__title">
+            Taller voluntari per ajuda als gats.
+          </div>
+          <div class="item__description">
+            Si vols ser d'ajuda i aconseguir cada dia més gats amb casa, siguis voluntari i estiguis atent a cada taller que fem!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9 is-covered">
+            <img src="IMG/evento3.jpg" alt="">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="item__title">
+            Mini concerts i nits de karaoke.
+          </div>
+          <div class="item__description">
+            Tens un don amb la música o saps tocar algún intrument? Pots vindre a Cat Cat-Fé a destacar les teves habilitats!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9 is-covered">
+            <img src="IMG/evento4.png" alt="">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="item__title">
+            Jocs de taula i concursos.
+          </div>
+          <div class="item__description">
+            Vine amb els teus familiars i amics a gaudir amb els jocs de taula que tenim. Farem concursos de tant en tant i podràs emportar-te a casa records i premis.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image video-container is-16by9">
+            <iframe type="text/html" src="https://www.youtube.com/embed/0yKTDSOF--0" frameborder="0"></iframe>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="item__title">
+            Nits de Pelis
+          </div>
+          <div class="item__description">
+            Aquest Dissabte, a les 20:30PM, veurem la famosa peli d'Aristogatos.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav>
+  <div style="background-color: rgb(220, 178, 255); text-align: center;" class="columns">
+    <div class="column">
+      <details>
+        <summary style="font-style: italic;">Més Informació ...</summary>
+        <div class="info-section">
+          <h2 style="font-family: cursive; font-size: large;">Estàs interessat en donar-li una llar a aquests felins?</h2>
+          <br>
+          <p>L'adopció de gats és una manera meravellosa de donar una nova llar a un animal que ho necessita. Els gats poden oferir companyia, amor, tranquilitat i moments de diversió. Si ets una persona que està pensant en adoptar un d'aquests gatets i vol informar-se sobre el tema, visita aquesta pàgina per veure si cumpleixes amb els requisits i les responsabilitats;<br> <a href="adopcion.html">Clic Here.</a></p>
+          <br><br>
+          <div class="gallery">
+            <img src="IMG/cat4.jpg" alt="Gat 1">
+            <img class="img-circulo" src="IMG/cat2.jpg" alt="Gat 2">
+            <img class="img-circulo" src="IMG/cat6.jpg" alt="Gat 3">
+            <img class="img-cuadrado" src="IMG/gr.png" alt="Gat 4">
+          </div>
+          <br><br>
+          <u><h3 style="font-style: italic; color: black;">Video Informatiu sobre l'Adopció de Gats</h3></u>
+          <br>
+                <iframe style="border-radius: 6%;" type="text/html" src="https://www.youtube.com/embed/Jv1iolzbvZg?si=wb6TgsoY6LIeQj8a" frameborder="0"></iframe>
+        </div>
+      </div>
+        </div>
+        <br>
+      </details>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+  });
+</script>
+
+<br>
+<footer>
+  <div style="height: 10%; background-color: rgb(150, 91, 208)">
+    <center>
+      <p style="color: white;">Copyright 2024 ©</p>
+    </center>
+  </div>
+  <div class="columns">
+    <div class="column is-one-third">
+      <i><h5 style="font-size: 140%; font-weight: 400;">Xarxes Socials de Cat Cat-Fé</h5></i>
+      <ul>
+        <li><img style="width: 7%;" src="IMG/redes2.jpeg" alt=""><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><img style="margin-right: 3px; width: 5%; border-radius: 27%; margin-left: 5px;" src="IMG/redes1.png" alt=""><a href="https://twitter.com/">Twitter</a></li>
+        <li><img style="width: 7%; border-radius: 50%;" src="IMG/redes4.jpeg" alt=""><a href="https://www.facebook.com/">Facebook</a></li>
+      </ul>
+    </div>
+    <div class="column is-one-third">
+      <i><h5 style="font-size: 140%; font-weight: 400;">Informació d'atenció al client</h5></i>
+      <ul>
+        <li>Email: catcatfe@gmail.com</li>
+        <li>Num Telefon: +64 384299302</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

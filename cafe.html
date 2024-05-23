@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta de Cafés</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link rel="icon" href="IMG/gatito.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f8f9fa;
+        }
+
+        hr {
+            height: 5px;
+            background-color: #cc79f3;
+            border: none;
+            margin: 30px 0;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            height: 30px;
+            width: 30px;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: #343a40;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        
+
+        section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            font-size: large;
+            font-style: italic;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            color: #495057;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+    
+
+        .navbar.is-primary{
+  background-color: #6a20a6;
+    }
+
+
+    .navbar.is-primary{
+  background-color: #521781;
+    }
+
+  .navbar.is-primary .navbar-start > a.navbar-item:hover {
+    background-color: #3a0b55;
+    color: #fff;
+  }
+
+  .navbar.is-primary .navbar-brand > a.navbar-item:hover {
+  background-color: #3a0b55;
+  color: #fff;
+  }  
+
+  @media screen and (min-width: 1024px) {
+  .navbar-menu {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 65%;
+  }}
+
+    </style>
+
+    <title>Carta de Café</title>
+</head>
+
+  <body style="font-family: 'Times New Roman', Times, serif;">
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <img style="width: 30%; border-radius: 50%; margin-right: 20px;" src="IMG/gatito.png" alt="">
+
+        <a class="navbar-item" href="#">
+          <strong style="text-decoration: none;">Cafetería Cat Cat-Fé</strong>
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+  
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a style="background-color: #521781; color: white; margin-top: 14px;" href="index.html">Torna al Inici</a>
+
+        </div>
+      </div>
+    </nav>
+    <hr>
+
+    <i><h2 style="font-size: x-large; color: #3c0b64;">---Carta de Cat Cat-Fé---</h2></i>
+
+    <hr>
+
+    <section>
+        <h4 style="color: #3c0b64; text-align: center;">Vine a veure la nostra carta i descobreix els teus gustos.</h4>
+        <p style="padding-bottom: 44px;"></p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Cafés.
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h4>Explora l'essència concentrada del cafè amb el nostre Ristretto, submergeix-te en la plaer equilibrat del Cappuccino, gaudeix de la rica decadència del Mocca, saboreja la intensitat pura de l'Espresso, deleita't amb la suavitat del Latte Macchiato i el dolçor del Caramel Macchiato.
+                  </h4>
+
+                <section>
+                    <ul>
+                        <li><img style="width: 120px;
+                            height: 190px;
+                            object-fit: cover;
+                            border-radius: 8px;
+                            transition: transform 0.3s ease-in-out;" src="IMG/capucchino.jpeg">
+                            <p>Capucchino</p></li>
+                        <li><img style="width: 120px;
+                            height: 190px;
+                            object-fit: cover;
+                            border-radius: 8px;
+                            transition: transform 0.3s ease-in-out;" src="IMG/expreso.jpeg">
+                            <p>Solo/Expreso</p></li>
+                        <li><img style="width: 120px;
+                            height: 190px;
+                            object-fit: cover;
+                            border-radius: 8px;
+                            transition: transform 0.3s ease-in-out;" src="IMG/macchiato.jpeg">
+                            <p>Late macchiato</p></li>
+                        <li><img style="width: 120px;
+                            height: 190px;
+                            object-fit: cover;
+                            border-radius: 8px;
+                            transition: transform 0.3s ease-in-out;" src="IMG/moca.jpeg">
+                            <p>Moca</p></li>
+                        <li><img style="width: 120px;
+                            height: 190px;
+                            object-fit: cover;
+                            border-radius: 8px;
+                            transition: transform 0.3s ease-in-out;" src="IMG/ristretto.jpeg">
+                            <p>Ristretto</p></li>
+                            <li><img style="width: 120px;
+                              height: 190px;
+                              object-fit: cover;
+                              border-radius: 8px;
+                              transition: transform 0.3s ease-in-out;" src="IMG/caramelmacchiato.jpeg">
+                              <p>Caramel Macchiato</p></li>
+                              <li><img style="width: 120px;
+                                height: 190px;
+                                object-fit: cover;
+                                border-radius: 8px;
+                                transition: transform 0.3s ease-in-out;" src="IMG/dalgona.jpeg">
+                                <p>Baileys Dalgona</p></li>
+                    </ul>
+                </section>
+                <bR>
+                    <li style="margin-left: 3%;">Capucchino;<p style="text-align: justify; font-family: 'Times New Roman', Times, serif; color: rgb(50, 26, 104); font-style: italic;">Café espresso, llet calenta i escuma de llet.</p></li>
+                    <li style="margin-left: 3%;">Expreso;<p style="text-align: justify; font-family: 'Times New Roman', Times, serif; color: rgb(50, 26, 104); font-style: italic;">Café curt i intens.</p></li>
+                    <li style="margin-left: 3%;">Late Macchiato;<p style="text-align: justify; font-family: 'Times New Roman', Times, serif; color: rgb(50, 26, 104); font-style: italic;">Llet calenta amb una taca d'espresso a sobre.</p></li>
+                    <li style="margin-left: 3%;">Moca;<p style="text-align: justify; font-family: 'Times New Roman', Times, serif; color: rgb(50, 26, 104); font-style: italic;">Llet calenta, i xocolata o sirope de xocolata, una saborosa combinació de cafè i xocolata.</p></li>
+                    <li style="margin-left: 3%;">Ristretto;<p style="text-align: justify; font-family: 'Times New Roman', Times, serif; color: rgb(50, 26, 104); font-style: italic;">Una versió encara més concentrada de l'espresso, fet amb menys aigua i mòlt de cafè, fent-lo més intens i aromàtic.</p></li>
+                    <li style="margin-left: 3%;">Caramel Macchiato;<p style="text-align: justify; font-family: 'Times New Roman', Times, serif; color: rgb(50, 26, 104); font-style: italic;">Llet calenta amb una petita quantitat d'espresso afegida decorat amb sirope de caramel.</p></li>
+                    <li style="margin-left: 3%;">Baileys Dalgona;<p style="text-align: justify; font-family: 'Times New Roman', Times, serif; color: rgb(50, 26, 104); font-style: italic;">Una versió del famós 'Dalgona Coffee', que consisteix en dues capes, una capa de llet freda o calenta y altra capa d'escuma de café instantani, sucre i aigua, per donar-li un toc cremos, aquesta versió incorpora licor Baileys a la llet.</p></li>
+                  <bR>
+              </div>
+            </div>
+          </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Dolços i Salats.
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h4>Explora una àmplia gamma de entrepans dolços i salats que deleitaran els teus sentits. Des de torrades i entrepans versàtils fins a rotllos de canyella reconfortants, brioixeria exquisita, pastissos elegants i alfajors tradicionals, que oferirà una combinació perfecta de sabors i textures.</h4>
+                </div>
+                <section>
+                  <ul>
+                    <li><img style="width: 120px;
+                        height: 190px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        transition: transform 0.3s ease-in-out;" src="IMG/bocadillo.jpeg">
+                        <p>Torrades</p></li>
+                    <li><img style="width: 120px;
+                        height: 190px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        transition: transform 0.3s ease-in-out;" src="IMG/canela.jpeg">
+                        <p>Cinnamon Rolls</p></li>
+                    <li><img style="width: 120px;
+                        height: 190px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        transition: transform 0.3s ease-in-out;" src="IMG/pastel.jpeg">
+                        <p>Pastissos</p></li>
+                    <li><img style="width: 120px;
+                        height: 190px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        transition: transform 0.3s ease-in-out;" src="IMG/cruasan.jpeg">
+                        <p>Brioixeria</p></li>
+                        <li><img style="width: 120px;
+                          height: 190px;
+                          object-fit: cover;
+                          border-radius: 8px;
+                          transition: transform 0.3s ease-in-out;" src="IMG/alfajores.jpeg">
+                          <p>Alfajors</p></li>
+                          <li><img style="width: 120px;
+                            height: 190px;
+                            object-fit: cover;
+                            border-radius: 8px;
+                            transition: transform 0.3s ease-in-out;" src="IMG/jamon.jpeg">
+                            <p>Entrepans</p></li>
+                </ul>
+                </section>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Alres begudes.
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h4>Explora una àmplia gamma de begudes refrescants i revitalitzants que satisfaran la teva set i elevaran la teva energia. Des de refrescos amb bombolles fins a aigua pura i revitalitzant, sucs naturals frescos i infusions reconfortants.</h4>
+                </div>
+                <section>
+                  <ul>
+                    <li><img style="width: 120px;
+                        height: 190px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        transition: transform 0.3s ease-in-out;" src="IMG/cocacola.jpeg">
+                        <p>Refrescos</p></li>
+                    <li><img style="width: 120px;
+                        height: 190px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        transition: transform 0.3s ease-in-out;" src="IMG/zumos.jpeg">
+                        <p>Sucs Naturals</p></li>
+                    <li><img style="width: 120px;
+                        height: 190px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        transition: transform 0.3s ease-in-out;" src="IMG/agua.jpeg">
+                        <p>Aigua Mineral</p></li>
+                    <li><img style="width: 120px;
+                        height: 190px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        transition: transform 0.3s ease-in-out;" src="IMG/gas.jpeg">
+                        <p>Aigua amb gas</p></li>
+                    <li><img style="width: 120px;
+                        height: 190px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        transition: transform 0.3s ease-in-out;" src="IMG/infusio.jpeg">
+                        <p>Infusions</p></li>
+                </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+    </section>
+
+<center>
+    <a class="more-link" href="Construc.html">...més</a>
+</center>
+<br>
+<br>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+  
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+        if ($navbarBurgers.length > 0) {
+  
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+  
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+  
+              el.classList.toggle('is-active');
+  
+              $target.classList.toggle('is-active');
+  
+            });
+          });
+        }
+      });
+    </script>
+    <br>
+    <footer>
+      <div style=" height: 10%; background-color: rgb(150, 91, 208)">
+          <center>
+              <p style="color: white;">Copyright 2024 ©</p>
+          </center>
+      </div>
+  
+      <div class="columns">
+          <div class="column is-one-third">
+              <i><h5 style="font-size: 140%; font-weight: 400;">Xarxes Socials de Cat Cat-Fé</h5></i>
+              <ul>
+                  <li><img style="width: 7%;" src="IMG/redes2.jpeg" alt=""><a href="https://www.instagram.com/">Instagram</a></li>
+                  <li><img style="margin-right: 3px; width: 5%; border-radius: 27%; margin-left: 5px;" src="IMG/redes1.png" alt=""><a href="https://twitter.com/">Twitter</a></li>
+                  <li><img style="width: 7%; border-radius: 50%;" src="IMG/redes4.jpeg" alt=""><a href="https://www.facebook.com/">Facebook</a></li>
+              </ul>
+          </div>
+          <div class="column is-one-third">
+              <i><h5 style="font-size: 140%; font-weight: 400;">Informació d'atenció al client</h5></i>
+              <ul>
+                  <li>Email: catcatfe@gmail.com</li>
+                  <li>Num Telefon: +64 384299302</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  </div>
+    </footer>
+  </body>
+  </html>
+  

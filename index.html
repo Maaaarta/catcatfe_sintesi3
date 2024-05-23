@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+  <link rel="icon" href="IMG/gatito.png" type="image/x-icon">
+  <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    .navbar.is-primary {
+      background-color: #521781;
+    }
+    @media screen and (min-width: 769px), print {
+      .hero.is-medium .hero-body {
+        padding: 15rem 4.5rem;
+        background-image: url(IMG/lila1.png);
+      }
+    }
+    .navbar.is-primary .navbar-start > a.navbar-item:hover {
+      background-color: #3a0b55;
+      color: #fff;
+    }
+    .navbar.is-primary .navbar-brand > a.navbar-item:hover {
+      background-color: #3a0b55;
+      color: #fff;
+    }
+    .title:not(:last-child) {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .label {
+      color: white;
+    }
+    .title {
+      color: rgb(53, 34, 65);
+    }
+    .input:hover {
+      border-color: #a666cb;
+    }
+    .textarea:hover {
+      border-color: #a666cb;
+    }
+    .boton-enviar {
+      background-color: #8442aa;
+      padding: 10px 20px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .boton-enviar:hover {
+      background-color: #452064;
+    }
+    .input::placeholder, .textarea::placeholder {
+      color: rgb(56, 56, 56);
+    }
+    .input:active, .input:focus, .is-active.input, .is-active.textarea, .is-focused.input, .is-focused.textarea, .select select.is-active, .select select.is-focused, .select select:active, .select select:focus, .textarea:active, .textarea:focus {
+      border-color: #8442aa;
+      box-shadow: 0 0 0 .125em rgba(94, 28, 216, 0.25);
+    }
+    .informativo {
+      border: 1px solid #696969;
+      border-radius: 2%;
+      padding: 20px;
+      width: 82%;
+      margin: 0 auto;
+      background-image: url(IMG/meow8.jpg);
+      color: black;
+    }
+    .navbar-brand, .navbar-tabs {
+      align-items: stretch;
+      display: flex;
+      flex-shrink: 9;
+      min-height: 3.25rem;
+      margin-left: 28px;
+    }
+    @media screen and (min-width: 1024px) {
+      .navbar-menu {
+        flex-grow: -5;
+        flex-shrink: 0;
+        margin-left: -200px;
+      }
+    }
+    .navbar-menu.is-active {
+      display: block;
+    }
+
+    a:hover {
+color: rgb(25, 0, 54);
+    }
+    
+    #back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 24px;
+  height: 67px;
+  background-color: rgb(135, 69, 196);
+  color: white;
+  font-size: 37px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 12%;
+  opacity: 0.6;
+  display: none;
+  z-index: 1000;
+    }
+
+#back-to-top:hover {
+  background-color: rgb(61, 26, 94);
+  
+}
+
+
+.title.has-text-centered {
+    text-align: center;
+    font-size: 3em; 
+    background: linear-gradient(to right, #9326db, #edf052); 
+    -webkit-background-clip: text;
+    color: transparent; 
+    display: inline-block;
+}
+
+
+  </style>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif;">
+  <!-- Navbar -->
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <img style="width: 13%; border-radius: 50%; margin-right: 20px;" src="IMG/gatito.png" alt="">
+      <a class="navbar-item" href="#">
+        <strong>Cafetería Cat Cat-Fé</strong>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#inici">Inici</a>
+        <a class="navbar-item" href="#sobre-nosaltres">Sobre Nosaltres</a>
+        <a class="navbar-item" href="#serveis">Serveis</a>
+        <a class="navbar-item" href="#contacte">Contacte</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Inicio -->
+  <nav>
+    <div style="background-color: rgb(43, 18, 63); color: white;" class="columns">
+        <div class="column">
+            <details>
+                <summary>Carta</summary>
+                <p>Aqui pots trobar la nostra carta actualment.</p>
+                <a href="cafe.html">Fes un ull a la carta de Cat Cat-Fé.</a>
+                <br>
+            </details>
+        </div>
+        <div class="column">
+            <details>
+                <summary>Adopció</summary>
+                <p>Si estàs interessat en l'adopció de gats, informat i contactans</p>
+                <a href="adopcion.html">Adopció de gats</a>
+                <br>
+            </details>
+        </div>
+        <div class="column">
+            <details>
+                <summary>Esdeveniments</summary>
+                <p>No et perdis res de res a Cat Cat-Fé</p>
+                <a href="eventos.html">Pròxims events</a>
+                <br>
+            </details>
+        </div>
+    </div>
+</nav>
+  <section class="hero is-primary is-medium" id="inici">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Benvinguts a Cat Cat-Fé
+        </h1>
+        <h2 class="subtitle">
+          Informa't sobre la nostra Cafetería i els nostres felins
+        </h2>
+      </div>
+    </div>
+  </section>
+
+    <div class="container is-clipped">
+      <div id="slider">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9 is-covered">
+              <img
+                src="IMG/cafeteria1.png"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="item__title">
+              Part dels felins.
+            </div>
+            <div class="item__description">
+              En aquesta cafeteria escollim un ambient agradable pels nostres felins i clients.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9 is-covered">
+              <img
+                src="IMG/cafeteria2.png"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="item__title">
+              Part dels cafés.
+            </div>
+            <div class="item__description">
+              Pots escollir on prendre't el teu café.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9 is-covered">
+              <img
+                src="IMG/gato1.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="item__title">
+              Cats de recollida.
+            </div>
+            <div class="item__description">
+              Conneix als nostres felins de recollida.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9 is-covered">
+              <img
+                src="IMG/mew.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="item__title">
+              Gats de recollida en adopció.
+            </div>
+            <div class="item__description">
+              Si estàs interesat en donar-li una casa als nostres felins, vine a veure al teu futur amic de companyia.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9 is-covered">
+              <img
+                src="IMG/1352182.png"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="item__title">
+              Varietat de sabors.
+            </div>
+            <div class="item__description">
+             Troba el teu café preferit en Cat Cat-Fé!
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9 is-covered">
+                <img
+                  src="IMG/29122.jpg"
+                  alt=""
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="item__title">
+                Sabors exòtics.
+              </div>
+              <div class="item__description">
+                Vine amb els teus amics o familiars i gaudeix!
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <article>
+      <div class="container">
+          <div class="columns">
+              <div class="column">
+                  <h3 style="font-size: 178%; font-weight: 400;">Pròxims esdeveniments felins</h3>
+                  <p>Descobreix els esdeveniments més esperats en la nostra cafeteria. Sempre hi ha alguna cosa per a tots els amants dels gats! Estiguès al punt de les nostres pròximes activitats.</p>
+                  <a href="eventos.html">No et perdis cap esdeveniment de Cat Cat-Fé!</a>
+              </div>
+              
+              <div class="column">
+                  <h3 style="font-size: 178%; font-weight: 400;">Delícies del mes</h3>
+                  <p>Sé el primer a provar les nostres noves especialitats de cafè! Des de cafès exòtics fins al clàssic cafè de llet. Vine i descobreix la teva nova beguda favorita!</p>
+              </div>
+              
+              <div class="column">
+                  <h3 style="font-size: 178%; font-weight: 400;">Ofertes especials</h3>
+                  <p>No et perdis les nostres ofertes especials de la setmana. Des de descomptes en pastissos fins a promocions en begudes calentes, sempre hi ha una cosa especial esperant-te en la nostra cafeteria de gats. Aprofita aquestes ofertes abans que s'esgotin!</p>
+              </div>
+          </div>
+      </div>    
+          </div>
+      </div>
+  </article>
+  <br><bR>
+    
+<hr>
+  <!-- Sobre Nosaltres -->
+  <section class="section" id="sobre-nosaltres">
+    <div class="container">
+      <h1 class="title has-text-centered">Sobre Nosaltres</h1>
+      <div class="content">
+        <p>Som una empresa dedicada a la elavoració del café i del té, nostre objectiu es poder brindar als nostres clients la major qualitat d'aliments que tenim i donar una experiència agradable amb un ambient tranquil, comptant amb la ajuda dels nostres felins.</p>
+      </div>
+    </div>
+  </section>
+
+  <article>
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <h3 style="font-size: 178%; font-weight: 400;">La nostra historia</h3>
+                <p>Benvingut al cor de la nostra cafeteria de gats, on cada tassa conta una història. Des dels nostres inicis com un petit cafè fins a convertir-nos en el refugi preferit dels amants dels felins, hem estat compromesos a oferir un ambient acollidor i ple d'amor per als nostres clients peluts i humans per igual.</p>
+                <br>
+                <img src="IMG/coffee1.jpg">
+
+              </div>
+            
+            <div class="column">
+                <h3 style="font-size: 178%; font-weight: 400;">Companyia al local</h3>
+                <p>En la nostra cafeteria, cada gat té una història especial. Des de rescatats dels carrers fins aquells que van trobar una segona oportunitat en el nostre cafè, estem orgullosos d'oferir una llar temporal a aquests adorables felins mentre esperen ser adoptats. Vine a conèixer als nostres amics peluts i potser trobes al teu company perfecte.</p>
+                <br>
+                <img src="IMG/cat1.jpg">
+
+            </div>
+            
+            <div class="column">
+                <h3 style="font-size: 178%; font-weight: 400;">Nostre compromís</h3>
+                <p>En la nostra cerca constant de crear un món millor per als gats sense llar, ens comprometem a donar un percentatge dels nostres guanys a organitzacions locals de rescat animal. Cada tassa de cafè que gaudeixes en la nostra cafeteria contribueix a fer una diferència en la vida d'aquests adorables felins. Gràcies per ser part del nostre compromís!</p>
+                <br>
+                <img src="IMG/cat2.png">
+
+            </div>
+        </div>
+    </div>
+    
+            
+            
+        </div>
+    </div>
+</article>
+
+<bR>
+<div class="informativo">
+  <u><h2 style="font-size: x-large; text-align: center; font-style: italic;">Novetats</h2></u>
+  <br>
+  <p style="font-style: italic; font-size: large; text-align: center;">Informat sobre les novetats de Cat Cat-Fé</p>
+  <ul>
+    <bR>
+      <ul>
+        <li>* Nous cafés a la carta!!!<a href="cafe.html">Clic Here!</a> </li>
+        <li>* Nous esdeveniments a Cat Cat-Fé!<a href="eventos.html">Clic Here!</a> </li>
+        <li>* Sistema d'adopció de gats!<a href="adopcion.html">Clic Here!</a> </li>
+        <li>* Bonics dissenys per als teus cafés preferits. Gats, gosos, flors, ocellets, cors, ...</li>
+        <li>* Nous jocs de taula i joguines per a poder jugar amb els nostres felins.</li>
+      </ul>
+      <bR>
+      <p>No et perdis res a Cat Cat-Fé.</p><bR>
+  </ul></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      if ($navbarBurgers.length > 0) {
+
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            el.classList.toggle('is-active');
+
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+    });
+  </script>
+
+
+  <hr>
+  <!-- Servicios -->
+  <section class="section" id="serveis">
+    <div class="container">
+      <h1 class="title has-text-centered">Serveis</h1>
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <h2 style="font-size: 178%; font-weight: 400;" class="subtitle">Variedad de Gats</h2>
+            <p>Gaudiu de la companyia dels nostres adorables gats mentre preneu un cafè. ¡Cadascun té la seva pròpia personalitat!</p>
+            <br>
+            <img src="IMG/miau1.jpeg">
+      </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <h2 style="font-size: 178%; font-weight: 400;"  class="subtitle">Cafè i Tentemps</h2>
+            <p>Oferim una àmplia selecció de cafès, tès i tentemps deliciosos. ¡Perfecte per gaudir mentre acaricieu els nostres gats!</p>
+            <br>
+            <img src="IMG/caf.jpg">
+      </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <h2 style="font-size: 178%; font-weight: 400;" class="subtitle">Esdeveniments</h2>
+            <p>Organitzem esdeveniments especials, com ara nits de jocs amb els gats, tallers de cura felina, karaoke, i molt més!</p>
+            <br>
+            <img src="IMG/event.jpg">
+                    </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="table-container" style="margin-left: auto; margin-right: auto;">
+        <i><h2 style="color: #643900; text-align: center; font-size: xx-large; font-weight: bold;" class="horario">Horari de Cat Cat-Fé</h2></i>
+        <p style="font-style: italic; color: #85612c; text-align: center;">Nota: Per a queixes o consultes, si us plau, <a href="#contacte">contacteu-nos</a> i us llegirem a travès de la nostra aplicació de gestió.</p>
+        <p style="font-style: italic; color: #85612c; text-align: center;">També gestionem reserves telefòniques (Num Telefon: +34 384299302)</p>
+        <br>
+        <table style="border-radius: 2%;" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th style="color: #643900;">Día</th>
+                    <th style="color: #643900;">Horari d'Apertura</th>
+                    <th style="color: #643900;">Horari de Tancament</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color: #643900; font-weight: bold;">Dilluns</td>
+                    <td style="color: #85612c;">9:00 AM - 14:00 PM</td>
+                    <td style="color: #85612c;">16:00 PM - 22:00 PM</td>
+                </tr>
+                <tr>
+                    <td style="color: #643900; font-weight: bold;">Dimarts</td>
+                    <td style="color: #85612c;">9:00 AM - 14:00 PM</td>
+                    <td style="color: #85612c;">16:00 PM - 22:00 PM</td>
+                </tr>
+                <tr>
+                    <td style="color: #643900; font-weight: bold;">Dimecres</td>
+                    <td style="color: #85612c;">9:00 AM - 14:00 PM</td>
+                    <td style="color: #85612c;">16:00 PM - 22:00 PM</td>
+                </tr>
+                <tr>
+                    <td style="color: #643900; font-weight: bold;">Dijous</td>
+                    <td style="color: #85612c;">9:00 AM - 14:00 PM</td>
+                    <td style="color: #85612c;">16:00 PM - 22:00 PM</td>
+                </tr>
+                <tr>
+                    <td style="color: #643900; font-weight: bold;">Divendres</td>
+                    <td style="color: #85612c;">9:00 AM - 14:00 PM</td>
+                    <td style="color: #85612c;">16:00 PM - 22:00 PM</td>
+                </tr>
+                <tr>
+                    <td style="color: #643900; font-weight: bold;">Dissabte</td>
+                    <td style="color: #85612c;">9:00 AM - 14:00 PM</td>
+                    <td style="color: #85612c;">16:00 PM - 22:00 PM</td>
+                </tr>
+                <tr>
+                    <td style="color: #643900; font-weight: bold;">Diumenge</td>
+                    <td style="color: #85612c;">DESCANS</td>
+                    <td style="color: #85612c;">DESCANS</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+  </section>
+<hr>
+
+  <!-- Contacto -->
+  <section style="background-image: url(IMG/cat2.jpg);" class="section" id="contacte">
+    <div class="container">
+      <h2 style="color: white;" class="title">Contacte'ns a Cat Cat-Fé</h2>
+      <br>
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <form id="confirmacio">
+            <div class="field">
+              <label class="label">Nom<span style="color: red;">*</span></label>
+              <div class="control">
+                <input style="background-color: rgba(255, 255, 255, 0.5);" class="input" type="text" placeholder="Escriu el teu nom" required>
+              </div>
+          </div>
+          
+            <div class="field">
+              <label class="label">Correu Electrònic<span style="color: red;">*</span></label>
+              <div class="control">
+                <input style="background-color: rgba(255, 255, 255, 0.5);" class="input" type="email" placeholder="escriuelteu@correuelectronic.com" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Nº de Teléfon<span style="color: red;">*</span></label>
+              <div class="control">
+                <input style="background-color: rgba(255, 255, 255, 0.5);" class="input" type="tel" placeholder="+34 000 00 00 00" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Missatge<span style="color: red;">*</span></label>
+              <div class="control">
+                <textarea style="background-color: rgba(255, 255, 255, 0.5);" class="textarea" placeholder="Escriu'nos el teu missatge." required></textarea>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <input class="boton-enviar" type="submit" value="Enviar">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script>
+  document.getElementById('confirmacio').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Aquest missatge sha enviat amb éxit. Aviat serà respost.');
+    this.reset();
+  });
+</script>
+
+<a id="back-to-top" class="button is-light is-small">
+  ↑
+</a>
+
+  <!-- Footer -->
+  <footer>
+    <div style=" height: 10%; background-color: #3a0b55">
+        <center>
+            <p style="color: white;">Copyright 2024 ©</p>
+        </center>
+    </div>
+
+    <div class="columns">
+        <div class="column is-one-third">
+            <i><h5 style="font-size: 140%; font-weight: 400;">Xarxes Socials de Cat Cat-Fé</h5></i>
+            <ul>
+                <li><img style="width: 7%;" src="IMG/redes2.jpeg" alt=""><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><img style="margin-right: 3px; width: 5%; border-radius: 27%; margin-left: 5px;" src="IMG/redes1.png" alt=""><a href="https://twitter.com/">Twitter</a></li>
+                <li><img style="width: 7%; border-radius: 50%;" src="IMG/redes4.jpeg" alt=""><a href="https://www.facebook.com/">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="column is-one-third">
+            <i><h5 style="font-size: 140%; font-weight: 400;">Informació d'atenció al client</h5></i>
+            <ul>
+                <li>Email: catcatfe@gmail.com</li>
+                <li>Num Telefon: +34 384299302</li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+</div>
+  </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach(el => {
+      el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
+});
+    </script>
+</body>
+</html>

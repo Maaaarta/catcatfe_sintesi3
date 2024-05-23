@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopció de gats</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+        <link rel="icon" href="IMG/gatito.png" type="image/x-icon">
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+</head>
+<style>
+
+form{
+    font-family: 'Times New Roman';
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .boton-borrar {
+    background-color: #882525;
+    padding: 10px 20px; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+  }
+
+  .boton-borrar:hover{
+    background-color: #4b0d0d;
+  }
+
+  .boton-enviar{
+    background-color: #158350;
+    padding: 10px 20px; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+  }
+
+  .boton-enviar:hover{
+    background-color: #0d4b33;
+  }
+
+  .informativo {
+  border: 1px solid #696969; 
+  border-radius: 2%; 
+  padding: 20px; 
+  width: 75%; 
+  margin: 0 auto;
+  background-image: url(IMG/cat3.jpg);
+  color: white;
+  }
+
+*, ::after, ::before {
+  box-sizing: inherit;
+  text-align: center;
+}
+
+.formulari{
+  background-image: url(IMG/fon.png);
+  color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-menu {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 50%;
+  }}
+
+  .navbar.is-primary{
+  background-color: #521781;
+    }
+
+  .navbar.is-primary .navbar-start > a.navbar-item:hover {
+    background-color: #3a0b55;
+    color: #fff;
+  }
+
+  .navbar.is-primary .navbar-brand > a.navbar-item:hover {
+  background-color: #3a0b55;
+  color: #fff;
+  }  
+
+</style>
+<body style="font-family: 'Times New Roman', Times, serif;">
+
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <img style="width: 13%; border-radius: 50%; margin-right: 20px;" src="IMG/gatito.png" alt="">
+
+      <a class="navbar-item" href="#">
+        <strong>Cafetería Cat Cat-Fé</strong>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a style="background-color: #521781; color: white; margin-top: 14px;" href="index.html">Torna al Inici</a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+<br>
+
+
+<br>
+
+<div class="informativo">
+  <u><h2 style="font-size: x-large; text-align: center; font-style: italic;">Informat sobre la adopció dels nostres felins</h2></u>
+  <br>
+  <p style="font-style: italic;">Abans de completar el formulari de adopció, es molt important que consideris el següent:</p>
+  <ul>
+    <bR>
+      <ul>
+        <li>* L'adopció d'un gat és una responsabilitat a llarg termini.</li>
+        <li>* Els gats requereixen cures regulars, incloent alimentació, atenció mèdica i exercici.</li>
+        <li>* Has de tenir en compte l'espai disponible a casa per al nou membre de la família.</li>
+        <li>* És important avaluar el teu estil de vida i assegurar-te que estàs preparat per comprometre't amb un gat.</li>
+        <li>* Recorda que els gats poden viure molts anys, així que assegura't de estar preparat per cuidar-ne durant tota la seva vida.</li>
+      </ul>
+      <bR>
+      <p>Un cop estiguis segur que estàs preparat per adoptar un gat, si us plau completa el següent formulari.</p>
+      
+</div>
+
+<br>
+
+
+
+
+
+<div class="formulari" style="border: 1px solid #696969; border-radius: 2%; padding: 20px; width: 60%; margin: 0 auto; align-content: center;">
+  <u><h1 style="font-size: x-large; font-style: italic;">Formulari d'adopció de gats</h1></u>
+  <br>
+  <form id="confirmacio">
+      <fieldset>
+          <i><h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Estàs interessat en adoptar un dels nostres felins? Informa't per saber tot el necessari i completa el següent formulari.</h2></i>
+          <br>
+
+          <label>Nom i Cognoms</label>
+          <input type="text" placeholder="Escriu el teu nom" required>
+          <span style="color: red;">*</span>
+
+          <br><br>
+          <label>Email</label>
+          <input type="email" placeholder="escriuelteu@correu.com" required>
+          <span style="color: red;">*</span>
+
+          <br><br>
+          <label>Ets major d'edat?<span style="color: red;">*</span>
+          </label><br>
+          <input type="radio" name="vos" required>Sí.<br>
+          <input type="radio" name="vos">No. 
+
+          <br><br>
+          <label>On vius?</label>
+          <select required>
+            <option>---</option>
+              <option>Tarragona</option>
+              <option>Barcelona</option>
+              <option>Girona</option>
+              <option>Lleida</option>
+              <option>Un altre lloc</option>
+          </select>
+          <span style="color: red;">*</span>
+
+          <br><br>
+          <label>En cas de viure en altre lloc, especifica-ho.<span style="color: red;">*</span>
+          </label><br>
+          <input type="text" required>
+          <p>(si anteriorment has posat ja on vius, escriu ".")</p>
+
+<bR>
+          <br>
+          <label>Quants gats vols adoptar?</label>
+          <input type="number" required>
+          <span style="color: red;">*</span>
+
+          <br><br>
+          <label>Tens alguna preferència? (pot ser que no es compleixi, però podem tenir-ho en compte)</label><br>
+          <input type="checkbox"> Tranquil<br>
+          <input type="checkbox"> Juganer<br>
+          <input type="checkbox"> Mascle<br>
+          <input type="checkbox"> Femella<br>
+          <input type="checkbox"> Independent<br>
+          <input type="checkbox"> Dependent<br>
+          <input type="checkbox"> Carinyós
+          <br><br>
+        </div>
+          <label style="text-align: center; color: black;">Vols dir-nos alguna cosa que no s'ha especificat anteriorment?</label><br>
+          <textarea rows="5" cols="70"></textarea>
+
+
+          <br><br>
+          <input class="boton-enviar" type="submit" value="Enviar">
+          <input class="boton-borrar" type="reset" value="Esborrar">
+
+      </fieldset>
+  </form>
+  <br>
+  <p style="font-size: small; color: #831a1a; text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Aquest formulari només està fet per aquelles persones que sàpiguen que tindre una mascota és una gran responsabilitat, no és una joguina ni cap 'cosa' per regalar.</p>
+</div>
+
+<script>
+  document.getElementById('confirmacio').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Aquest missatge sha enviat amb éxit, aviat serà respost via email. Moltes gràcies.');
+    this.reset();
+  });
+  </script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  if ($navbarBurgers.length > 0) {
+
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        el.classList.toggle('is-active');
+
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+});
+</script>
+
+<br>
+<footer>
+<div style=" height: 10%; background-color: rgb(150, 91, 208)">
+    <center>
+        <p style="color: white;">Copyright 2024 ©</p>
+    </center>
+</div>
+
+<div class="columns">
+    <div class="column is-one-third">
+        <i><h5 style="font-size: 140%; font-weight: 400;">Xarxes Socials de Cat Cat-Fé</h5></i>
+        <ul>
+            <li><img style="width: 7%;" src="IMG/redes2.jpeg" alt=""><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><img style="margin-right: 3px; width: 5%; border-radius: 27%; margin-left: 5px;" src="IMG/redes1.png" alt=""><a href="https://twitter.com/">Twitter</a></li>
+            <li><img style="width: 7%; border-radius: 50%;" src="IMG/redes4.jpeg" alt=""><a href="https://www.facebook.com/">Facebook</a></li>
+        </ul>
+    </div>
+    <div class="column is-one-third">
+        <i><h5 style="font-size: 140%; font-weight: 400;">Informació d'atenció al client</h5></i>
+        <ul>
+            <li>Email: catcatfe@gmail.com</li>
+            <li>Num Telefon: +64 384299302</li>
+        </ul>
+    </div>
+</div>
+
+</div>
+</div>
+</footer>
+</body>
+</html>
